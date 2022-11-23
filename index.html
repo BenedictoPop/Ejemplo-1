@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Salesman</title>
+    <link rel="stylesheet" href="Estilo/Menu.css">
+</head>
+<body onload="fillData()">
+    <div class="container">
+        <br>
+        <br>
+        <table border="3">
+            <tr>
+                <td><button onclick="saveData()">Save</button></td>
+                <td><button onclick="verTable()">Ver table</button></td>
+                <td><button onclick="ApllyFilter()">Apply</button></td>
+            </tr>
+            <tr>
+                <td>Grade</td>
+                <td colspan="2">
+                    <select name="selestOS" id="selestOS" onchange="grade(this)">
+                        <option disabled selected>Seleccione un grado </option>
+                        <option value="1ero. Básico">1ero. Básico</option>
+                        <option value="2do. Básico">2do. Básico</option>
+                        <option value="3ero. Básico">3ero. Básico</option>
+                    </select>    
+                </td>
+            </tr>
+            <tr>
+                <td>Section</td>
+                <td colspan="2">
+                    <select name="selectOS" id="selectOS" onchange="section(this)">
+                        <option disabled selected>Seleccione una seccion</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br>
+
+        <script src="Js/Biblioteca.js"></script>
+
+        <div id="viewTable"></div>
+        <br>
+    </div>
+</body>
+</html>
